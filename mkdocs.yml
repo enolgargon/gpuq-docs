@@ -1,0 +1,10 @@
+site_name: GPUQ Documentation
+
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  
+copyright: >
+  Documentation licensed under CC BY-SA 4.0
