@@ -1,5 +1,7 @@
 # Gestión de colas para GPU en experimentos - gpuq
 
+<img src="assets/gpuq.png" width="240" align="left" style="margin-right:20px; margin-bottom:10px;" />
+
 `gpuq` es una herramienta diseñada para gestionar el uso compartido de GPUs en un servidor de investigación.
 
 En muchos servidores utilizados por estudiantes y grupos de investigación, varias personas ejecutan experimentos de *machine learning* al mismo tiempo. Esto suele provocar problemas como:

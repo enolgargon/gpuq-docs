@@ -42,6 +42,7 @@ extra_css:
 
 plugins:
   - search
+  - social
   - mermaid2
   - i18n:
       docs_structure: folder

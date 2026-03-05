@@ -1,5 +1,7 @@
 # GPU queue management for experiments — gpuq
 
+<img src="assets/gpuq.png" width="240" align="left" style="margin-right:20px; margin-bottom:10px;" />
+
 `gpuq` is a tool designed to manage shared GPU usage on a research server.
 
 On many servers used by students and research groups, several people run machine learning experiments at the same time. This often leads to problems such as:
