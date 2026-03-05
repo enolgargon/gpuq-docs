@@ -60,7 +60,7 @@ Esto incluye:
 - los ficheros necesarios
 - la orden por defecto
 
-:material-download: [Descargar Dockerfile](../../../snippets/Dockerfile)
+:material-download: [Descargar Dockerfile](/snippets/Dockerfile)
 
 ```dockerfile
 --8<-- "snippets/Dockerfile"
@@ -87,7 +87,7 @@ En él se especifican aspectos como:
 
 Este fichero ejecuta el experimento principal utilizando main.py.
 
-:material-download: [Descargar docker-compose.yml](../../../snippets/docker-compose.yml)
+:material-download: [Descargar docker-compose.yml](/snippets/docker-compose.yml)
 ```yaml
 --8<-- "snippets/docker-compose.yml"
 ```
@@ -105,7 +105,7 @@ A veces es útil ejecutar una variante del experimento, por ejemplo para:
 Para ello podemos crear un segundo fichero docker-compose.
 
 
-:material-download: [Descargar docker-compose.test.yml](../../../snippets/docker-compose.test.yml)
+:material-download: [Descargar docker-compose.test.yml](/snippets/docker-compose.test.yml)
 ```yaml
 --8<-- "snippets/docker-compose.test.yml"
 ```
