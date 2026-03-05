@@ -1,7 +1,8 @@
-site_name: GPUQ Documentation
+site_name: GPUQ Docs
 
 theme:
   name: material
+  custom_dir: docs/overrides
   language: es
   features:
     - content.code.copy
@@ -9,30 +10,64 @@ theme:
     - toc.integrate
     - navigation.footer
 
+extra_css:
+  - stylesheets/extra.css
+
 plugins:
   - search
   - mermaid2
+  - i18n:
+      docs_structure: folder
+      languages:
 
-nav:
-  - Home: index.md
-  - Introducción:
-      - ¿Qué es Docker?: introduccion/que-es-docker.md
-      - ¿Qué es gpuq?: introduccion/que-es-gpuq.md
+        - locale: es
+          name: Español
+          build: true
+          default: true
+          nav:
+            - Inicio: index.md
+            - Introducción:
+                - ¿Qué es Docker?: introduccion/que-es-docker.md
+                - ¿Qué es gpuq?: introduccion/que-es-gpuq.md
 
-  - Docker:
-      - Conceptos básicos: docker/conceptos-basicos.md
-      - Crear un Dockerfile: docker/dockerfile.md
-      - Usar docker-compose: docker/docker-compose.md
+            - Docker:
+                - Conceptos básicos: docker/conceptos-basicos.md
+                - Crear un Dockerfile: docker/dockerfile.md
+                - Usar docker-compose: docker/docker-compose.md
 
-  - Experimentos:
-      - Estructura de un experimento: experimentos/estructura-experimento.md
-      - Ejecutar contenedores Docker: experimentos/ejecutar-contenedores.md
-      - Ejemplo mínimo: experimentos/ejemplo-minimo.md
+            - Experimentos:
+                - Estructura de un experimento: experimentos/estructura-experimento.md
+                - Ejecutar contenedores Docker: experimentos/ejecutar-contenedores.md
+                - Ejemplo mínimo: experimentos/ejemplo-minimo.md
 
-  - Uso de gpuq:
-      - Ejecutar trabajos: gpuq/ejecutar-trabajos.md
-      - Monitorizar trabajos: gpuq/monitorizar-trabajos.md
-      - Logs y resultados: gpuq/logs-y-resultados.md
-  
+            - Uso de gpuq:
+                - Ejecutar trabajos: gpuq/ejecutar-trabajos.md
+                - Monitorizar trabajos: gpuq/monitorizar-trabajos.md
+                - Logs y resultados: gpuq/logs-y-resultados.md
+
+        - locale: en
+          name: English
+          build: true
+          nav:
+            - Home: index.md
+            - Introduction:
+                - What is Docker?: introduccion/que-es-docker.md
+                - What is gpuq?: introduccion/que-es-gpuq.md
+
+            - Docker:
+                - Basic concepts: docker/conceptos-basicos.md
+                - Creating a Dockerfile: docker/dockerfile.md
+                - Using docker-compose: docker/docker-compose.md
+
+            - Experiments:
+                - Experiment structure: experimentos/estructura-experimento.md
+                - Running Docker containers: experimentos/ejecutar-contenedores.md
+                - Minimal example: experimentos/ejemplo-minimo.md
+
+            - Using gpuq:
+                - Running jobs: gpuq/ejecutar-trabajos.md
+                - Monitoring jobs: gpuq/monitorizar-trabajos.md
+                - Logs and results: gpuq/logs-y-resultados.md
+
 copyright: >
   Documentation licensed under CC BY-SA 4.0

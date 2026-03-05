@@ -1,0 +1,9 @@
+.lang-switch a + a {
+  border-left: 1px solid var(--md-primary-bg-color);
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+.lang-switch {
+    margin-right: 1rem;
+}

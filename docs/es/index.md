@@ -1,4 +1,4 @@
-# gpuq — Gestión de GPUs para experimentos de investigación
+# Gestión de colas para GPU en experimentos - gpuq
 
 `gpuq` es una herramienta diseñada para gestionar el uso compartido de GPUs en un servidor de investigación.
 
