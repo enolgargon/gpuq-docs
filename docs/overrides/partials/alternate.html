@@ -2,12 +2,12 @@
 <div class="md-header__option lang-switch">  {% for alt in config.extra.alternate %}
     
     {% if alt.link.startswith('/') %}
-      {% set url = '/gpuq-docs' ~ alt.link %}
+      {% set url = alt.link %}
     {% else %}
-      {% set url = '/gpuq-docs/' ~ alt.link %}
+      {% set url = '/' ~ alt.link %}
     {% endif %}
     
-    <a href="{{ url }}" class="md-header__button" title="{{ alt.name }}">
+    <a href="{{config.site_url}}{{ url }}" class="md-header__button" title="{{ alt.name }}">
       <img src="/gpuq-docs/assets/flags/{{ alt.lang }}.png"
            alt="{{ alt.lang }}"
            style="height:14px;margin-right:4px;vertical-align:-2px;">

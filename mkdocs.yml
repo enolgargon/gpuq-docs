@@ -1,8 +1,5 @@
 site_name: GPUQ Docs
 
-repo_url: https://github.com/tuusuario/gpuq
-repo_name: tuusuario/gpuq
-
 theme:
   name: material
   custom_dir: docs/overrides
@@ -78,6 +75,12 @@ plugins:
                 - Running jobs: gpuq/ejecutar-trabajos.md
                 - Monitoring jobs: gpuq/monitorizar-trabajos.md
                 - Logs and results: gpuq/logs-y-resultados.md
+
+site_url: https://enolgargon.github.io/gpuq-docs
+repo_url: https://github.com/enolgargon/gpuq-docs
+repo_name: enolgargon/gpuq-docs
+site_description: Documentación para el uso de Docker y la herramienta GPUQ en la ejecución de experimentación.
+site_author: Enol García González
 
 copyright: >
   Documentation licensed under CC BY-SA 4.0
