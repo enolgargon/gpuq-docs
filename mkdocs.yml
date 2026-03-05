@@ -77,8 +77,8 @@ plugins:
                 - Logs and results: gpuq/logs-y-resultados.md
 
 site_url: https://enolgargon.github.io/gpuq-docs
-repo_url: https://github.com/enolgargon/gpuq-docs
-repo_name: enolgargon/gpuq-docs
+repo_url: https://github.com/enolgargon/gpuq
+repo_name: enolgargon/gpuq
 site_description: Documentación para el uso de Docker y la herramienta GPUQ en la ejecución de experimentación.
 site_author: Enol García González
 
