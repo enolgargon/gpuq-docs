@@ -1,5 +1,8 @@
 site_name: GPUQ Docs
 
+repo_url: https://github.com/tuusuario/gpuq
+repo_name: tuusuario/gpuq
+
 theme:
   name: material
   custom_dir: docs/overrides
