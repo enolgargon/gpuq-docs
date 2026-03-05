@@ -1,0 +1,30 @@
+{% if config.extra.alternate %}
+<div class="md-header__option lang-switch">
+
+  {# asegurar que site_url acaba en / #}
+  {% set base = config.site_url %}
+  {% if not base.endswith('/') %}
+    {% set base = base ~ '/' %}
+  {% endif %}
+
+  {% for alt in config.extra.alternate %}
+
+    {# normalizar alt.link #}
+    {% set link = alt.link %}
+    {% if link.startswith('/') %}
+      {% set parts = link.split('/') %}
+      {% set link = parts[2:] | join('/') %}
+    {% endif %}
+
+    <a href="{{ base ~ link }}"
+       class="md-header__button"
+       title="{{ alt.name }}">
+      <img src="/gpuq-docs/assets/flags/{{ alt.lang }}.png"
+           alt="{{ alt.lang }}"
+           style="height:14px;margin-right:4px;vertical-align:-2px;">
+      {{ alt.name }}
+    </a>
+
+  {% endfor %}
+</div>
+{% endif %}

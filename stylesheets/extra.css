@@ -1,0 +1,300 @@
+/* =====================================================
+   GPUQ Documentation Theme
+   Custom styling for Material for MkDocs
+   ===================================================== */
+
+
+/* =====================================================
+   LANGUAGE SWITCH
+   ===================================================== */
+
+.lang-switch {
+  margin-right: 1rem;
+}
+
+.lang-switch a + a {
+  border-left: 1px solid var(--md-primary-bg-color);
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+
+/* =====================================================
+   THEME VARIABLES
+   ===================================================== */
+
+/* Light mode */
+
+[data-md-color-scheme="default"] {
+
+  --md-primary-fg-color: #18a999;
+  --md-primary-fg-color--light: #4cc5b8;
+  --md-primary-fg-color--dark: #0f7f72;
+
+  --md-accent-fg-color: #7ed957;
+
+  --md-typeset-a-color: #2f80ed;
+
+  --gpuq-background: #f7fafc;
+}
+
+
+/* Dark mode */
+
+[data-md-color-scheme="slate"] {
+
+  --md-primary-fg-color: #18a999;
+  --md-primary-fg-color--light: #2fd3c2;
+  --md-primary-fg-color--dark: #0b6b61;
+
+  --md-accent-fg-color: #7ed957;
+
+  --md-typeset-a-color: #2f80ed;
+
+  --gpuq-background: #0b1220;
+}
+
+
+/* =====================================================
+   HEADER / NAVBAR
+   ===================================================== */
+
+/* Light mode header */
+
+[data-md-color-scheme="default"] .md-header {
+  background: linear-gradient(
+    120deg,
+    #2f80ed 0%,
+    #18a999 60%,
+    #7ed957 100%
+  );
+}
+
+
+/* Dark mode header */
+
+[data-md-color-scheme="slate"] .md-header {
+  background: linear-gradient(
+    120deg,
+    #1b5fc6,
+    #138c7f,
+    #4fbf4f
+  );
+}
+
+
+/* Header visual polish */
+
+.md-header {
+  backdrop-filter: blur(6px);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+}
+
+
+/* Header text */
+
+.md-header__title,
+.md-header__topic,
+.md-header__button,
+.md-tabs__link {
+  color: white;
+}
+
+
+/* =====================================================
+   NAVIGATION TABS
+   ===================================================== */
+
+/* Light mode */
+
+[data-md-color-scheme="default"] .md-tabs {
+  background: linear-gradient(
+    120deg,
+    #2f80ed 0%,
+    #18a999 60%,
+    #7ed957 100%
+  );
+}
+
+
+/* Dark mode */
+
+[data-md-color-scheme="slate"] .md-tabs {
+  background: linear-gradient(
+    120deg,
+    #1b5fc6,
+    #138c7f,
+    #4fbf4f
+  );
+}
+
+
+/* Tabs text */
+
+.md-tabs__link {
+  color: rgba(255,255,255,0.85);
+  font-weight: 500;
+}
+
+.md-tabs__link--active {
+  color: white;
+  border-bottom: 2px solid rgba(255,255,255,0.9);
+}
+
+.md-tabs__link:hover {
+  color: white;
+}
+
+
+/* =====================================================
+   CONTENT
+   ===================================================== */
+
+/* Links */
+
+.md-typeset a {
+  color: #2f80ed;
+}
+
+.md-typeset a:hover {
+  color: #7ed957;
+}
+
+
+/* Buttons */
+
+.md-button--primary {
+  background-color: #18a999;
+  border-color: #18a999;
+}
+
+.md-button--primary:hover {
+  background-color: #7ed957;
+  border-color: #7ed957;
+}
+
+
+/* Code blocks */
+
+.md-typeset pre code {
+  border-radius: 8px;
+}
+
+.md-clipboard {
+  color: #7ed957;
+}
+
+
+/* Tables */
+
+.md-typeset table {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+
+/* Headings */
+
+.md-typeset h1 {
+  font-weight: 700;
+}
+
+.md-typeset h2,
+.md-typeset h3 {
+  font-weight: 600;
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+/* Light mode */
+
+[data-md-color-scheme="default"] .md-footer {
+  background: #eef3f7;
+  color: #4a5a6a;
+}
+
+[data-md-color-scheme="default"] .md-footer-meta {
+  background: #e4ecf2;
+}
+
+
+/* Dark mode */
+
+[data-md-color-scheme="slate"] .md-footer {
+  background: #0b1220;
+  color: #9fb3c8;
+}
+
+[data-md-color-scheme="slate"] .md-footer-meta {
+  background: #070d18;
+}
+
+
+/* Footer links */
+
+.md-footer a {
+  color: #2f80ed;
+}
+
+.md-footer a:hover {
+  color: #7ed957;
+}
+
+
+/* Gradient separator */
+
+.md-footer {
+  border-top: 2px solid transparent;
+  border-image: linear-gradient(
+    90deg,
+    #2f80ed,
+    #18a999,
+    #7ed957
+  );
+  border-image-slice: 1;
+}
+
+
+/* =====================================================
+   FOOTER TEXT FIX
+   ===================================================== */
+
+/* Light */
+
+[data-md-color-scheme="default"] .md-footer-meta,
+[data-md-color-scheme="default"] .md-footer-meta * {
+  color: #4a5a6a !important;
+}
+
+
+/* Dark */
+
+[data-md-color-scheme="slate"] .md-footer-meta,
+[data-md-color-scheme="slate"] .md-footer-meta * {
+  color: #9fb3c8 !important;
+}
+
+
+/* Footer links */
+
+.md-footer-meta a {
+  color: #2f80ed !important;
+}
+
+.md-footer-meta a:hover {
+  color: #7ed957 !important;
+}
+
+
+/* =====================================================
+   GLOBAL UI POLISH
+   ===================================================== */
+
+* {
+  transition: background 0.25s ease,
+              color 0.25s ease,
+              border-color 0.25s ease;
+}
