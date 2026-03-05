@@ -2,9 +2,37 @@ site_name: GPUQ Documentation
 
 theme:
   name: material
+  language: es
+  features:
+    - content.code.copy
+    - navigation.expand
+    - toc.integrate
+    - navigation.footer
+
+plugins:
+  - search
+  - mermaid2
 
 nav:
   - Home: index.md
+  - Introducción:
+      - ¿Qué es Docker?: introduccion/que-es-docker.md
+      - ¿Qué es gpuq?: introduccion/que-es-gpuq.md
+
+  - Docker:
+      - Conceptos básicos: docker/conceptos-basicos.md
+      - Crear un Dockerfile: docker/dockerfile.md
+      - Usar docker-compose: docker/docker-compose.md
+
+  - Experimentos:
+      - Estructura de un experimento: experimentos/estructura-experimento.md
+      - Ejecutar contenedores Docker: experimentos/ejecutar-contenedores.md
+      - Ejemplo mínimo: experimentos/ejemplo-minimo.md
+
+  - Uso de gpuq:
+      - Ejecutar trabajos: gpuq/ejecutar-trabajos.md
+      - Monitorizar trabajos: gpuq/monitorizar-trabajos.md
+      - Logs y resultados: gpuq/logs-y-resultados.md
   
 copyright: >
   Documentation licensed under CC BY-SA 4.0

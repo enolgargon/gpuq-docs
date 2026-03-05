@@ -1,0 +1,19 @@
+services:
+  experiment:
+    build: .
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ['0']
+              capabilities: [gpu]
+    environment:
+      - EPOCHS=50
+      - LEARNING_RATE=0.001
+      - BATCH_SIZE=32
+    volumes:
+      - ./data:/data:ro
+      - ./results:/results
+    command: ["python", "test.py"]
