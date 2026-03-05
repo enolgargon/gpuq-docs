@@ -2,6 +2,8 @@ site_name: GPUQ Docs
 
 theme:
   name: material
+  logo: assets/gpuq.png
+  favicon: assets/gpuq.png
   custom_dir: docs/overrides
   language: es
   features:
